@@ -20,10 +20,8 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="index.jsp">Home </a>
-                <a class="nav-item nav-link active" href="listarPerfil.jsp">Perfis</a>
-                <a class="nav-item nav-link active" href="">Menus</a>
-                <a class="nav-item nav-link active" href="#">Usuários</a>
-                <a class="nav-item nav-link active" href="#">Clientes</a>
+                <a class="nav-item nav-link active" href="listarCliente.jsp">Clientes</a>
+            
                 </div>
             </div>
         </nav>

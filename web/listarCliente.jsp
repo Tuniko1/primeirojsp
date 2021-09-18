@@ -5,10 +5,11 @@
 --%>
 
 
+<%@page import="factory.ConexaoFactory"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"
         import="java.util.ArrayList"
-        import="model.Perfil"
-        import="model.PerfilDAO"%>
+        import="model.Cliente"
+        import="model.ClienteDAO"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
@@ -21,7 +22,7 @@
         <script src="https://kit.fontawesome.com/3f3417947e.js" crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
-        <title>Perfis</title>
+        <title>Clientes</title>
     </head>
     <body>
         <div class="container-fluid">
@@ -33,17 +34,21 @@
              
              <div id="content" style="height: auto; margin: 10px;">
                     
-                 <h1 style="margin: 10px;">Listar Perfis</h1>
+                 <h1 style="margin: 10px;">Listar Clientes</h1>
                     <div class="row h-10 justify-content-center align-items-center" >  
                    
                         <div class="col-10">    
-                            <a href="cadastrarPerfil.jsp"><button type="button" class="btn btn-success">Novo Cadastro</button></a><br><br>
+                            <a href="cadastrarCliente.jsp"><button type="button" class="btn btn-success">Novo Cliente</button></a><br><br>
                             <div class="table-dark">
                                    <table class="table" id="listarPerfil">
                                          <thead >
                                               <tr>
                                                   <th>Código</th>
                                                   <th>Nome</th>
+                                                  <th>CPF</th>
+                                                  <th>Email</th>
+                                                  <th>Endereço</th>
+                                                  <th>Telefone</th>
                                                   <th>Ações</th>
 
                                               </tr>
@@ -51,13 +56,17 @@
                                           </thead>
 
                                           <tbody>
-                                              <jsp:useBean class="model.PerfilDAO" id="pdao"/>
-                                              <c:forEach var="p" items="${pdao.lista}" >
+                                              <jsp:useBean class="model.ClienteDAO" id="cdao"/>
+                                              <c:forEach var="c" items="${cdao.lista}" >
                                                   <tr class="text-black">
-                                                      <td>${p.idPerfil}</td>
-                                                      <td>${p.nome}</td>
+                                                      <td>${c.idCliente}</td>
+                                                      <td>${c.nome}</td>
+                                                      <td>${c.cpf}</td>
+                                                      <td>${c.email}</td>
+                                                      <td>${c.endereco}</td>
+                                                      <td>${c.telefone}</td>
                                                       <td class="text-center">
-                                                          <a href="gerenciarPerfil?acao=alterar&idPerfil=${p.idPerfil}" class="btn btn-primary btn-lg" role="button" style="float:left">
+                                                          <a href="gerenciarCliente?acao=alterar&idPerfil=${c.idCliente}" class="btn btn-primary btn-lg" role="button" style="float:left">
                                                               <i class="fas fa-pencil-alt"></i>&nbsp Alterar</a>
                                                               
                                                           <a href="" class="btn btn-danger btn-lg" role="button" style="float:left">   
@@ -65,11 +74,11 @@
 
 
                                                   </tr>
-
+                                                                              %>
                                                   </c:forEach>
 
                                           </tbody>
-
+                                       
 
                                    </table>
                                               
