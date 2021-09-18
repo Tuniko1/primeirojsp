@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomcatProjectProperties>
+    <rootDir></rootDir>
+    <workDir>/work</workDir>
+    <exportSource>false</exportSource>
+    <reloadable>true</reloadable>
+    <redirectLogger>false</redirectLogger>
+    <updateXml>false</updateXml>
+    <warLocation></warLocation>
+    <extraInfo></extraInfo>
+    <mavenClasspath>false</mavenClasspath>
+    <webPath></webPath>
+    <webClassPathEntries>
+        <webClassPathEntry>/ProvaA1LTP3/build/web/WEB-INF/classes</webClassPathEntry>
+        <webClassPathEntry>/ProvaA1LTP3/build/web/WEB-INF/lib/jstl-api.jar</webClassPathEntry>
+        <webClassPathEntry>/ProvaA1LTP3/build/web/WEB-INF/lib/jstl-impl.jar</webClassPathEntry>
+        <webClassPathEntry>/ProvaA1LTP3/build/web/WEB-INF/lib/mysql-connector-java-5.1.49.jar</webClassPathEntry>
+        <webClassPathEntry>/ProvaA1LTP3/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar</webClassPathEntry>
+        <webClassPathEntry>/ProvaA1LTP3/lib/javaee-endorsed-api-7.0/javaee-doc-api.jar</webClassPathEntry>
+        <webClassPathEntry>/ProvaA1LTP3/lib/javaee-endorsed-api-7.0/javax.annotation-api.jar</webClassPathEntry>
+        <webClassPathEntry>/ProvaA1LTP3/lib/javaee-endorsed-api-7.0/javax.xml.soap-api.jar</webClassPathEntry>
+        <webClassPathEntry>/ProvaA1LTP3/lib/javaee-endorsed-api-7.0/jaxb-api-osgi.jar</webClassPathEntry>
+        <webClassPathEntry>/ProvaA1LTP3/lib/javaee-endorsed-api-7.0/jaxws-api.jar</webClassPathEntry>
+        <webClassPathEntry>/ProvaA1LTP3/lib/javaee-endorsed-api-7.0/jsr181-api.jar</webClassPathEntry>
+        <webClassPathEntry>/ProvaA1LTP3/lib/jstl/javaee-doc-api.jar</webClassPathEntry>
+        <webClassPathEntry>/ProvaA1LTP3/lib/jstl/jstl-api.jar</webClassPathEntry>
+        <webClassPathEntry>/ProvaA1LTP3/lib/jstl/jstl-impl.jar</webClassPathEntry>
+        <webClassPathEntry>/ProvaA1LTP3/lib/mysql-connector-java-5.1.49.jar</webClassPathEntry>
+    </webClassPathEntries>
+</tomcatProjectProperties>
